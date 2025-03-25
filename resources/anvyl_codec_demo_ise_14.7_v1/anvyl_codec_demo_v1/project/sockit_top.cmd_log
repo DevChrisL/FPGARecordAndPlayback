@@ -1,0 +1,12 @@
+xst -intstyle ise -ifn "/home/ise/Shared_Folder_Xilinx/xilinx_projects/anvyl_codec_demo/sockit_top.xst" -ofn "/home/ise/Shared_Folder_Xilinx/xilinx_projects/anvyl_codec_demo/sockit_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sockit_top.ucf -p xc6slx45-csg484-3 sockit_top.ngc sockit_top.ngd  
+map -intstyle ise -p xc6slx45-csg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sockit_top_map.ncd sockit_top.ngd sockit_top.pcf 
+par -w -intstyle ise -ol high -mt off sockit_top_map.ncd sockit_top.ncd sockit_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml sockit_top.twx sockit_top.ncd -o sockit_top.twr sockit_top.pcf -ucf sockit_top.ucf 
+bitgen -intstyle ise -f sockit_top.ut sockit_top.ncd 
+xst -intstyle ise -ifn "/home/ise/Shared_Folder_Xilinx/xilinx_projects/anvyl_codec_demo_v1/sockit_top.xst" -ofn "/home/ise/Shared_Folder_Xilinx/xilinx_projects/anvyl_codec_demo_v1/sockit_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sockit_top.ucf -p xc6slx45-csg484-3 sockit_top.ngc sockit_top.ngd  
+map -intstyle ise -p xc6slx45-csg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sockit_top_map.ncd sockit_top.ngd sockit_top.pcf 
+par -w -intstyle ise -ol high -mt off sockit_top_map.ncd sockit_top.ncd sockit_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml sockit_top.twx sockit_top.ncd -o sockit_top.twr sockit_top.pcf -ucf sockit_top.ucf 
+bitgen -intstyle ise -f sockit_top.ut sockit_top.ncd 

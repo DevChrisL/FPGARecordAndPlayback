@@ -1,0 +1,101 @@
+//! **************************************************************************
+// Written by: Map P.20160913 on Fri Apr 20 05:17:59 2018
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "SW<1>" LOCATE = SITE "P5" LEVEL 1;
+COMP "SW<2>" LOCATE = SITE "P6" LEVEL 1;
+COMP "SW<3>" LOCATE = SITE "R4" LEVEL 1;
+COMP "AUD_I2C_SDAT" LOCATE = SITE "C5" LEVEL 1;
+COMP "AUD_I2C_SCLK" LOCATE = SITE "A4" LEVEL 1;
+COMP "AUD_DACDAT" LOCATE = SITE "A5" LEVEL 1;
+COMP "AUD_DACLRCK" LOCATE = SITE "D6" LEVEL 1;
+COMP "LED<0>" LOCATE = SITE "W3" LEVEL 1;
+COMP "AUD_ADCLRCK" LOCATE = SITE "B6" LEVEL 1;
+COMP "LED<1>" LOCATE = SITE "Y4" LEVEL 1;
+COMP "LED<2>" LOCATE = SITE "Y1" LEVEL 1;
+COMP "LED<3>" LOCATE = SITE "Y3" LEVEL 1;
+COMP "OSC_100MHz" LOCATE = SITE "D11" LEVEL 1;
+COMP "PLL_LOCKED" LOCATE = SITE "AB4" LEVEL 1;
+COMP "AUD_MUTE" LOCATE = SITE "A15" LEVEL 1;
+COMP "KEY<0>" LOCATE = SITE "V5" LEVEL 1;
+COMP "KEY<1>" LOCATE = SITE "U4" LEVEL 1;
+COMP "KEY<2>" LOCATE = SITE "V3" LEVEL 1;
+COMP "KEY<3>" LOCATE = SITE "P4" LEVEL 1;
+COMP "AUD_ADCDAT" LOCATE = SITE "C6" LEVEL 1;
+COMP "AUD_BCLK" LOCATE = SITE "B12" LEVEL 1;
+COMP "AUD_XCK" LOCATE = SITE "A6" LEVEL 1;
+COMP "SW<0>" LOCATE = SITE "P8" LEVEL 1;
+TIMEGRP pll_clkout0 = BEL "pll/clkout1_buf" BEL
+        "av_config/control_state_FSM_FFd1" BEL
+        "av_config/control_state_FSM_FFd2" BEL "av_config/lut_index_3" BEL
+        "av_config/lut_index_2" BEL "av_config/lut_index_1" BEL
+        "av_config/lut_index_0" BEL "av_config/i2c_data_12" BEL
+        "av_config/i2c_data_11" BEL "av_config/i2c_data_10" BEL
+        "av_config/i2c_data_9" BEL "av_config/i2c_data_7" BEL
+        "av_config/i2c_data_6" BEL "av_config/i2c_data_5" BEL
+        "av_config/i2c_data_4" BEL "av_config/i2c_data_3" BEL
+        "av_config/i2c_data_2" BEL "av_config/i2c_data_1" BEL
+        "av_config/i2c_data_0" BEL "av_config/control/stage_4" BEL
+        "av_config/control/stage_3" BEL "av_config/control/stage_2" BEL
+        "av_config/control/stage_1" BEL "av_config/control/stage_0" BEL
+        "av_config/control/sclk_divider_6" BEL
+        "av_config/control/sclk_divider_5" BEL
+        "av_config/control/sclk_divider_4" BEL
+        "av_config/control/sclk_divider_3" BEL
+        "av_config/control/sclk_divider_2" BEL
+        "av_config/control/sclk_divider_1" BEL
+        "av_config/control/sclk_divider_0" BEL "av_config/control/acks_2" BEL
+        "av_config/control/acks_1" BEL "av_config/control/acks_0" BEL
+        "av_config/control/clock_en" BEL "av_config/control/data_12" BEL
+        "av_config/control/data_11" BEL "av_config/control/data_10" BEL
+        "av_config/control/data_9" BEL "av_config/control/data_7" BEL
+        "av_config/control/data_6" BEL "av_config/control/data_5" BEL
+        "av_config/control/data_4" BEL "av_config/control/data_3" BEL
+        "av_config/control/data_2" BEL "av_config/control/data_1" BEL
+        "av_config/control/data_0" BEL "av_config/i2c_start" BEL
+        "av_config/control/sdat";
+TIMEGRP AUD_XCK_OBUF = BEL "ae/last_sample_15" BEL "ae/last_sample_14" BEL
+        "ae/last_sample_13" BEL "ae/last_sample_12" BEL "ae/last_sample_11"
+        BEL "ae/last_sample_10" BEL "ae/last_sample_9" BEL "ae/last_sample_8"
+        BEL "ae/last_sample_7" BEL "ae/last_sample_6" BEL "ae/last_sample_5"
+        BEL "ae/last_sample_4" BEL "ae/last_sample_3" BEL "ae/last_sample_2"
+        BEL "ae/last_sample_1" BEL "ae/last_sample_0" BEL "ac/lrck_divider_7"
+        BEL "ac/lrck_divider_6" BEL "ac/lrck_divider_5" BEL
+        "ac/lrck_divider_4" BEL "ac/lrck_divider_3" BEL "ac/lrck_divider_2"
+        BEL "ac/lrck_divider_1" BEL "ac/lrck_divider_0" BEL "ac/shift_out_15"
+        BEL "ac/shift_out_14" BEL "ac/shift_out_13" BEL "ac/shift_out_12" BEL
+        "ac/shift_out_11" BEL "ac/shift_out_10" BEL "ac/shift_out_9" BEL
+        "ac/shift_out_8" BEL "ac/shift_out_7" BEL "ac/shift_out_6" BEL
+        "ac/shift_out_5" BEL "ac/shift_out_4" BEL "ac/shift_out_3" BEL
+        "ac/shift_out_2" BEL "ac/shift_out_1" BEL "ac/shift_out_0" BEL
+        "ac/shift_temp_15" BEL "ac/shift_temp_14" BEL "ac/shift_temp_13" BEL
+        "ac/shift_temp_12" BEL "ac/shift_temp_11" BEL "ac/shift_temp_10" BEL
+        "ac/shift_temp_9" BEL "ac/shift_temp_8" BEL "ac/shift_temp_7" BEL
+        "ac/shift_temp_6" BEL "ac/shift_temp_5" BEL "ac/shift_temp_4" BEL
+        "ac/shift_temp_3" BEL "ac/shift_temp_2" BEL "ac/shift_temp_1" BEL
+        "ac/shift_temp_0" BEL "ac/shift_in_15" BEL "ac/shift_in_14" BEL
+        "ac/shift_in_13" BEL "ac/shift_in_12" BEL "ac/shift_in_11" BEL
+        "ac/shift_in_10" BEL "ac/shift_in_9" BEL "ac/shift_in_8" BEL
+        "ac/shift_in_7" BEL "ac/shift_in_6" BEL "ac/shift_in_5" BEL
+        "ac/shift_in_4" BEL "ac/shift_in_3" BEL "ac/shift_in_2" BEL
+        "ac/shift_in_1" BEL "ac/shift_in_0" BEL "ae/dat_14" BEL "ae/dat_13"
+        BEL "ae/dat_12" BEL "ae/dat_11" BEL "ae/dat_10" BEL "ae/dat_9" BEL
+        "ae/dat_8" BEL "ae/dat_7" BEL "ae/dat_6" BEL "ae/dat_5" BEL "ae/dat_4"
+        BEL "ae/dat_3" BEL "ae/dat_2" BEL "ae/dat_1" BEL "ae/dat_0" BEL
+        "ae/dat_15" BEL "ae/index_6" BEL "ae/index_5" BEL "ae/index_4" BEL
+        "ae/index_3" BEL "ae/index_2" BEL "ae/index_1" BEL "ae/index_0" BEL
+        "ac/lrck_divider_0_1" BEL "ac/lrck_divider_7_1" BEL
+        "ac/lrck_divider_1_1" BEL "ac/lrck_divider_6_1" BEL "AUD_XCK";
+PIN SP6_BUFIO2_INSERT_PLL1_ML_BUFIO2_0_pins<0> = BEL
+        "SP6_BUFIO2_INSERT_PLL1_ML_BUFIO2_0" PINNAME DIVCLK;
+PIN pll/pll_base_inst/PLL_ADV_pins<2> = BEL "pll/pll_base_inst/PLL_ADV"
+        PINNAME CLKIN1;
+TIMEGRP sys_clk_pin = PIN "SP6_BUFIO2_INSERT_PLL1_ML_BUFIO2_0_pins<0>" PIN
+        "pll/pll_base_inst/PLL_ADV_pins<2>";
+TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 100 MHz HIGH 50%;
+TS_AUD_XCK_OBUF = PERIOD TIMEGRP "AUD_XCK_OBUF" TS_sys_clk_pin * 0.112903226
+        HIGH 50%;
+TS_pll_clkout0 = PERIOD TIMEGRP "pll_clkout0" TS_sys_clk_pin * 0.5 HIGH 50%;
+SCHEMATIC END;
+

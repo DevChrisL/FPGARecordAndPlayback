@@ -1,0 +1,693 @@
+Release 14.7 - xst P.20160913 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> 
+Reading design: sockit_top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "sockit_top.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "sockit_top"
+Output Format                      : NGC
+Target Device                      : xc6slx45-3-csg484
+
+---- Source Options
+Top Module Name                    : sockit_top
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "/home/ise/Shared_Folder_Xilinx/xilinx_projects/anvyl_codec_demo_v1/i2c_controller.v" into library work
+Parsing module <i2c_controller>.
+Analyzing Verilog file "/home/ise/Shared_Folder_Xilinx/xilinx_projects/anvyl_codec_demo_v1/i2c_av_config.v" into library work
+Parsing module <i2c_av_config>.
+Analyzing Verilog file "/home/ise/Shared_Folder_Xilinx/xilinx_projects/anvyl_codec_demo_v1/audio_effects.v" into library work
+Parsing module <audio_effects>.
+Analyzing Verilog file "/home/ise/Shared_Folder_Xilinx/xilinx_projects/anvyl_codec_demo_v1/audio_codec.v" into library work
+Parsing module <audio_codec>.
+Analyzing Verilog file "/home/ise/Shared_Folder_Xilinx/xilinx_projects/anvyl_codec_demo_v1/sockit_top.v" into library work
+Parsing module <sockit_top>.
+Parsing VHDL file "/home/ise/Shared_Folder_Xilinx/xilinx_projects/anvyl_codec_demo_v1/ipcore_dir/clk_wiz_v3_6.vhd" into library work
+Parsing entity <clk_wiz_v3_6>.
+Parsing architecture <xilinx> of entity <clk_wiz_v3_6>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <sockit_top>.
+Going to vhdl side to elaborate module clk_wiz_v3_6
+
+Elaborating entity <clk_wiz_v3_6> (architecture <xilinx>) from library <work>.
+Back to verilog to continue elaboration
+
+Elaborating module <i2c_av_config>.
+
+Elaborating module <i2c_controller>.
+
+Elaborating module <audio_codec>.
+
+Elaborating module <audio_effects>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <sockit_top>.
+    Related source file is "/home/ise/Shared_Folder_Xilinx/xilinx_projects/anvyl_codec_demo_v1/sockit_top.v".
+WARNING:Xst:647 - Input <KEY<3:1>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "/home/ise/Shared_Folder_Xilinx/xilinx_projects/anvyl_codec_demo_v1/sockit_top.v" line 54: Output port <CLK_OUT3> of the instance <pll> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <sockit_top> synthesized.
+
+Synthesizing Unit <clk_wiz_v3_6>.
+    Related source file is "/home/ise/Shared_Folder_Xilinx/xilinx_projects/anvyl_codec_demo_v1/ipcore_dir/clk_wiz_v3_6.vhd".
+    Summary:
+	no macro.
+Unit <clk_wiz_v3_6> synthesized.
+
+Synthesizing Unit <i2c_av_config>.
+    Related source file is "/home/ise/Shared_Folder_Xilinx/xilinx_projects/anvyl_codec_demo_v1/i2c_av_config.v".
+        LAST_INDEX = 4'b1010
+    Found 1-bit register for signal <i2c_start>.
+    Found 2-bit register for signal <control_state>.
+    Found 24-bit register for signal <i2c_data>.
+    Found 4-bit register for signal <lut_index>.
+    Found finite state machine <FSM_0> for signal <control_state>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 7                                              |
+    | Inputs             | 3                                              |
+    | Outputs            | 3                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | reset (positive)                               |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 00                                             |
+    | Power Up State     | 00                                             |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 4-bit adder for signal <lut_index[3]_GND_9_o_add_4_OUT> created at line 73.
+    Found 16x24-bit Read Only RAM for signal <n0040>
+    Summary:
+	inferred   1 RAM(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred  29 D-type flip-flop(s).
+	inferred   1 Finite State Machine(s).
+Unit <i2c_av_config> synthesized.
+
+Synthesizing Unit <i2c_controller>.
+    Related source file is "/home/ise/Shared_Folder_Xilinx/xilinx_projects/anvyl_codec_demo_v1/i2c_controller.v".
+        LAST_STAGE = 5'b11101
+    Found 5-bit register for signal <stage>.
+    Found 1-bit register for signal <clock_en>.
+    Found 1-bit register for signal <sdat>.
+    Found 3-bit register for signal <acks>.
+    Found 24-bit register for signal <data>.
+    Found 7-bit register for signal <sclk_divider>.
+    Found 5-bit adder for signal <stage[4]_GND_10_o_add_6_OUT> created at line 50.
+    Found 7-bit adder for signal <sclk_divider[6]_GND_10_o_add_17_OUT> created at line 63.
+    Found 1-bit tristate buffer for signal <i2c_sdat> created at line 28
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  41 D-type flip-flop(s).
+	inferred  29 Multiplexer(s).
+	inferred   1 Tristate(s).
+Unit <i2c_controller> synthesized.
+
+Synthesizing Unit <audio_codec>.
+    Related source file is "/home/ise/Shared_Folder_Xilinx/xilinx_projects/anvyl_codec_demo_v1/audio_codec.v".
+    Found 2-bit register for signal <bclk_divider>.
+    Found 16-bit register for signal <shift_out>.
+    Found 16-bit register for signal <shift_in>.
+    Found 16-bit register for signal <shift_temp>.
+    Found 8-bit register for signal <lrck_divider>.
+    Found 8-bit adder for signal <lrck_divider[7]_GND_12_o_add_1_OUT> created at line 37.
+    Found 2-bit adder for signal <bclk_divider[1]_GND_12_o_add_2_OUT> created at line 38.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  58 D-type flip-flop(s).
+	inferred   3 Multiplexer(s).
+Unit <audio_codec> synthesized.
+
+Synthesizing Unit <audio_effects>.
+    Related source file is "/home/ise/Shared_Folder_Xilinx/xilinx_projects/anvyl_codec_demo_v1/audio_effects.v".
+        SINE = 0
+        FEEDBACK = 1
+WARNING:Xst:647 - Input <control<3:2>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:2999 - Signal 'romdata', unconnected in block 'audio_effects', is tied to its initial value.
+WARNING:Xst:3035 - Index value(s) does not match array range for signal <romdata>, simulation mismatch.
+    Found 100x16-bit single-port Read Only RAM <Mram_romdata> for signal <romdata>.
+    Found 16-bit register for signal <dat>.
+    Found 7-bit register for signal <index>.
+    Found 16-bit register for signal <last_sample>.
+    Found 7-bit adder for signal <index[6]_GND_13_o_add_5_OUT> created at line 136.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred  39 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <audio_effects> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 100x16-bit single-port Read Only RAM                  : 1
+ 16x24-bit single-port Read Only RAM                   : 1
+# Adders/Subtractors                                   : 6
+ 2-bit adder                                           : 1
+ 4-bit adder                                           : 1
+ 5-bit adder                                           : 1
+ 7-bit adder                                           : 2
+ 8-bit adder                                           : 1
+# Registers                                            : 17
+ 1-bit register                                        : 3
+ 16-bit register                                       : 5
+ 2-bit register                                        : 1
+ 24-bit register                                       : 2
+ 3-bit register                                        : 1
+ 4-bit register                                        : 1
+ 5-bit register                                        : 1
+ 7-bit register                                        : 2
+ 8-bit register                                        : 1
+# Multiplexers                                         : 33
+ 1-bit 2-to-1 multiplexer                              : 28
+ 16-bit 2-to-1 multiplexer                             : 4
+ 7-bit 2-to-1 multiplexer                              : 1
+# Tristates                                            : 1
+ 1-bit tristate buffer                                 : 1
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <audio_codec>.
+The following registers are absorbed into counter <bclk_divider>: 1 register on signal <bclk_divider>.
+The following registers are absorbed into counter <lrck_divider>: 1 register on signal <lrck_divider>.
+Unit <audio_codec> synthesized (advanced).
+
+Synthesizing (advanced) Unit <audio_effects>.
+The following registers are absorbed into counter <index>: 1 register on signal <index>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_romdata> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 100-word x 16-bit                   |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <index>         |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <audio_effects> synthesized (advanced).
+
+Synthesizing (advanced) Unit <i2c_av_config>.
+The following registers are absorbed into counter <lut_index>: 1 register on signal <lut_index>.
+INFO:Xst:3231 - The small RAM <Mram_n0040> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 24-bit                    |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <lut_index>     |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <i2c_av_config> synthesized (advanced).
+
+Synthesizing (advanced) Unit <i2c_controller>.
+The following registers are absorbed into counter <sclk_divider>: 1 register on signal <sclk_divider>.
+The following registers are absorbed into counter <stage>: 1 register on signal <stage>.
+Unit <i2c_controller> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 100x16-bit single-port distributed Read Only RAM      : 1
+ 16x24-bit single-port distributed Read Only RAM       : 1
+# Counters                                             : 6
+ 2-bit up counter                                      : 1
+ 4-bit up counter                                      : 1
+ 5-bit up counter                                      : 1
+ 7-bit up counter                                      : 2
+ 8-bit up counter                                      : 1
+# Registers                                            : 134
+ Flip-Flops                                            : 134
+# Multiplexers                                         : 32
+ 1-bit 2-to-1 multiplexer                              : 28
+ 16-bit 2-to-1 multiplexer                             : 4
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:2146 - In block <audio_codec>, Counter <lrck_divider> <bclk_divider> are equivalent, XST will keep only <lrck_divider>.
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <av_config/FSM_0> on signal <control_state[1:2]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00    | 00
+ 01    | 01
+ 10    | 10
+ 11    | 11
+-------------------
+WARNING:Xst:1710 - FF/Latch <i2c_data_8> (without init value) has a constant value of 0 in block <i2c_av_config>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i2c_data_13> (without init value) has a constant value of 0 in block <i2c_av_config>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i2c_data_14> (without init value) has a constant value of 0 in block <i2c_av_config>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i2c_data_15> (without init value) has a constant value of 0 in block <i2c_av_config>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i2c_data_16> (without init value) has a constant value of 0 in block <i2c_av_config>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i2c_data_17> (without init value) has a constant value of 0 in block <i2c_av_config>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i2c_data_18> (without init value) has a constant value of 1 in block <i2c_av_config>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i2c_data_19> (without init value) has a constant value of 0 in block <i2c_av_config>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i2c_data_20> (without init value) has a constant value of 1 in block <i2c_av_config>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i2c_data_21> (without init value) has a constant value of 1 in block <i2c_av_config>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i2c_data_22> (without init value) has a constant value of 0 in block <i2c_av_config>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i2c_data_23> (without init value) has a constant value of 0 in block <i2c_av_config>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:1901 - Instance pll/pll_base_inst in unit pll/pll_base_inst of type PLL_BASE has been replaced by PLL_ADV
+WARNING:Xst:1710 - FF/Latch <av_config/control/data_23> (without init value) has a constant value of 0 in block <sockit_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <av_config/control/data_22> (without init value) has a constant value of 0 in block <sockit_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <av_config/control/data_21> (without init value) has a constant value of 1 in block <sockit_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <av_config/control/data_20> (without init value) has a constant value of 1 in block <sockit_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <av_config/control/data_19> (without init value) has a constant value of 0 in block <sockit_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <av_config/control/data_18> (without init value) has a constant value of 1 in block <sockit_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <av_config/control/data_17> (without init value) has a constant value of 0 in block <sockit_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <av_config/control/data_16> (without init value) has a constant value of 0 in block <sockit_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <av_config/control/data_15> (without init value) has a constant value of 0 in block <sockit_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <av_config/control/data_14> (without init value) has a constant value of 0 in block <sockit_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <av_config/control/data_13> (without init value) has a constant value of 0 in block <sockit_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <av_config/control/data_8> (without init value) has a constant value of 0 in block <sockit_top>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <sockit_top> ...
+
+Optimizing unit <audio_effects> ...
+
+Optimizing unit <audio_codec> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block sockit_top, actual ratio is 0.
+FlipFlop ac/lrck_divider_0 has been replicated 1 time(s)
+FlipFlop ac/lrck_divider_1 has been replicated 1 time(s)
+FlipFlop ac/lrck_divider_6 has been replicated 1 time(s)
+FlipFlop ac/lrck_divider_7 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 147
+ Flip-Flops                                            : 147
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : sockit_top.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 285
+#      GND                         : 1
+#      INV                         : 4
+#      LUT1                        : 7
+#      LUT2                        : 6
+#      LUT3                        : 65
+#      LUT4                        : 37
+#      LUT5                        : 11
+#      LUT6                        : 122
+#      MUXCY                       : 7
+#      MUXF7                       : 16
+#      VCC                         : 1
+#      XORCY                       : 8
+# FlipFlops/Latches                : 147
+#      FD                          : 23
+#      FDE                         : 56
+#      FDR                         : 26
+#      FDRE                        : 26
+#      FDS                         : 13
+#      FDSE                        : 3
+# Clock Buffers                    : 3
+#      BUFG                        : 3
+# IO Buffers                       : 18
+#      IBUF                        : 4
+#      IBUFG                       : 1
+#      IOBUF                       : 1
+#      OBUF                        : 12
+# Others                           : 1
+#      PLL_ADV                     : 1
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx45csg484-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             147  out of  54576     0%  
+ Number of Slice LUTs:                  252  out of  27288     0%  
+    Number used as Logic:               252  out of  27288     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    263
+   Number with an unused Flip Flop:     116  out of    263    44%  
+   Number with an unused LUT:            11  out of    263     4%  
+   Number of fully used LUT-FF pairs:   136  out of    263    51%  
+   Number of unique control sets:        11
+
+IO Utilization: 
+ Number of IOs:                          23
+ Number of bonded IOBs:                  18  out of    320     5%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                3  out of     16    18%  
+ Number of PLL_ADVs:                      1  out of      4    25%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+pll/pll_base_inst/CLKOUT0          | BUFG                   | 48    |
+pll/pll_base_inst/CLKOUT1          | NONE(ae/last_sample_15)| 99    |
+-----------------------------------+------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 4.588ns (Maximum Frequency: 217.960MHz)
+   Minimum input arrival time before clock: 5.336ns
+   Maximum output required time after clock: 5.539ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'pll/pll_base_inst/CLKOUT0'
+  Clock period: 3.602ns (frequency: 277.624MHz)
+  Total number of paths / destination ports: 373 / 102
+-------------------------------------------------------------------------
+Delay:               3.602ns (Levels of Logic = 2)
+  Source:            av_config/control/sclk_divider_2 (FF)
+  Destination:       av_config/control/stage_4 (FF)
+  Source Clock:      pll/pll_base_inst/CLKOUT0 rising
+  Destination Clock: pll/pll_base_inst/CLKOUT0 rising
+
+  Data Path: av_config/control/sclk_divider_2 to av_config/control/stage_4
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              5   0.447   0.943  av_config/control/sclk_divider_2 (av_config/control/sclk_divider_2)
+     LUT4:I1->O            3   0.205   0.651  av_config/control/Mcount_sclk_divider_xor<4>111 (av_config/control/Mcount_sclk_divider_xor<4>11)
+     LUT4:I3->O            9   0.205   0.829  av_config/control/_n0071_inv21 (av_config/control/_n0071_inv2)
+     FDRE:CE                   0.322          av_config/control/clock_en
+    ----------------------------------------
+    Total                      3.602ns (1.179ns logic, 2.423ns route)
+                                       (32.7% logic, 67.3% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'pll/pll_base_inst/CLKOUT1'
+  Clock period: 4.588ns (frequency: 217.960MHz)
+  Total number of paths / destination ports: 1600 / 147
+-------------------------------------------------------------------------
+Delay:               4.588ns (Levels of Logic = 4)
+  Source:            ae/index_1 (FF)
+  Destination:       ae/dat_15 (FF)
+  Source Clock:      pll/pll_base_inst/CLKOUT1 rising
+  Destination Clock: pll/pll_base_inst/CLKOUT1 rising
+
+  Data Path: ae/index_1 to ae/dat_15
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              38   0.447   1.481  ae/index_1 (ae/index_1)
+     LUT2:I0->O            1   0.203   0.580  ae_Mram_romdata15_SW0 (ae_N72)
+     LUT6:I5->O            1   0.205   0.580  ae_Mram_romdata15 (ae/_n0033<15>)
+     LUT6:I5->O            1   0.205   0.580  ae/dat_15_dpot (ae/dat_15_dpot)
+     LUT4:I3->O            1   0.205   0.000  ae/dat_15_rstpot (ae/dat_15_rstpot)
+     FD:D                      0.102          ae/dat_15
+    ----------------------------------------
+    Total                      4.588ns (1.367ns logic, 3.221ns route)
+                                       (29.8% logic, 70.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'pll/pll_base_inst/CLKOUT0'
+  Total number of paths / destination ports: 22 / 22
+-------------------------------------------------------------------------
+Offset:              5.336ns (Levels of Logic = 3)
+  Source:            KEY<0> (PAD)
+  Destination:       av_config/i2c_data_12 (FF)
+  Destination Clock: pll/pll_base_inst/CLKOUT0 rising
+
+  Data Path: KEY<0> to av_config/i2c_data_12
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.222   0.579  KEY_0_IBUF (KEY_0_IBUF)
+     INV:I->O             68   0.206   1.895  reset1_INV_0 (reset)
+     LUT3:I0->O           12   0.205   0.908  av_config/_n0054_inv1 (av_config/_n0054_inv)
+     FDE:CE                    0.322          av_config/i2c_data_0
+    ----------------------------------------
+    Total                      5.336ns (1.955ns logic, 3.381ns route)
+                                       (36.6% logic, 63.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'pll/pll_base_inst/CLKOUT1'
+  Total number of paths / destination ports: 137 / 84
+-------------------------------------------------------------------------
+Offset:              5.001ns (Levels of Logic = 4)
+  Source:            SW<1> (PAD)
+  Destination:       ae/index_4 (FF)
+  Destination Clock: pll/pll_base_inst/CLKOUT1 rising
+
+  Data Path: SW<1> to ae/index_4
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            24   1.222   1.277  SW_1_IBUF (SW_1_IBUF)
+     LUT2:I0->O            2   0.203   0.981  ae/_n0043<1>111_rstpot (ae/_n0043<1>111_rstpot)
+     LUT6:I0->O            1   0.203   0.808  ae/index_4_dpot (ae/index_4_dpot)
+     LUT6:I3->O            1   0.205   0.000  ae/index_4_rstpot (ae/index_4_rstpot)
+     FD:D                      0.102          ae/index_4
+    ----------------------------------------
+    Total                      5.001ns (1.935ns logic, 3.066ns route)
+                                       (38.7% logic, 61.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'pll/pll_base_inst/CLKOUT0'
+  Total number of paths / destination ports: 7 / 6
+-------------------------------------------------------------------------
+Offset:              4.587ns (Levels of Logic = 2)
+  Source:            av_config/control/sclk_divider_6 (FF)
+  Destination:       AUD_I2C_SCLK (PAD)
+  Source Clock:      pll/pll_base_inst/CLKOUT0 rising
+
+  Data Path: av_config/control/sclk_divider_6 to AUD_I2C_SCLK
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              4   0.447   0.788  av_config/control/sclk_divider_6 (av_config/control/sclk_divider_6)
+     LUT2:I0->O            1   0.203   0.579  av_config/control/i2c_sclk1 (AUD_I2C_SCLK_OBUF)
+     OBUF:I->O                 2.571          AUD_I2C_SCLK_OBUF (AUD_I2C_SCLK)
+    ----------------------------------------
+    Total                      4.587ns (3.221ns logic, 1.366ns route)
+                                       (70.2% logic, 29.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'pll/pll_base_inst/CLKOUT1'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              5.539ns (Levels of Logic = 2)
+  Source:            ac/lrck_divider_7 (FF)
+  Destination:       AUD_ADCLRCK (PAD)
+  Source Clock:      pll/pll_base_inst/CLKOUT1 rising
+
+  Data Path: ac/lrck_divider_7 to AUD_ADCLRCK
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDS:C->Q             73   0.447   1.699  ac/lrck_divider_7 (ac/lrck_divider_7)
+     INV:I->O              2   0.206   0.616  ac/_n00951_INV_0 (AUD_ADCLRCK_OBUF)
+     OBUF:I->O                 2.571          AUD_ADCLRCK_OBUF (AUD_ADCLRCK)
+    ----------------------------------------
+    Total                      5.539ns (3.224ns logic, 2.315ns route)
+                                       (58.2% logic, 41.8% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock pll/pll_base_inst/CLKOUT0
+-------------------------+---------+---------+---------+---------+
+                         | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock             |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------+---------+---------+---------+---------+
+pll/pll_base_inst/CLKOUT0|    3.602|         |         |         |
+-------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock pll/pll_base_inst/CLKOUT1
+-------------------------+---------+---------+---------+---------+
+                         | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock             |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------+---------+---------+---------+---------+
+pll/pll_base_inst/CLKOUT1|    4.588|         |         |         |
+-------------------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 13.00 secs
+Total CPU time to Xst completion: 10.41 secs
+ 
+--> 
+
+
+Total memory usage is 499952 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   28 (   0 filtered)
+Number of infos    :    6 (   0 filtered)
+
