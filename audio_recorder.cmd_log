@@ -1,0 +1,216 @@
+xst -intstyle ise -ifn "C:/Users/jalejandro1/Downloads/Computer_Systems_Design-master_TEST/CSDFINAL_COCKMUNCHERS/audio_recorder.xst" -ofn "C:/Users/jalejandro1/Downloads/Computer_Systems_Design-master_TEST/CSDFINAL_COCKMUNCHERS/audio_recorder.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -sd ../../ddr2_mem_test_ise_14.7_v1/ddr2_mem_test_v1/ddr2_mem_test/ipcore_dir -nt timestamp -uc audiomessagerecorder.ucf -p xc6slx45-csg484-3 audio_recorder.ngc audio_recorder.ngd  
+map -intstyle ise -p xc6slx45-csg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o audio_recorder_map.ncd audio_recorder.ngd audio_recorder.pcf 
+par -w -intstyle ise -ol high -mt off audio_recorder_map.ncd audio_recorder.ncd audio_recorder.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml audio_recorder.twx audio_recorder.ncd -o audio_recorder.twr audio_recorder.pcf -ucf audiomessagerecorder.ucf 
+bitgen -intstyle ise -f audio_recorder.ut audio_recorder.ncd 
+xst -intstyle ise -ifn "C:/Users/jalejandro1/Downloads/Computer_Systems_Design-master_TEST/CSDFINAL_COCKMUNCHERS/audio_recorder.xst" -ofn "C:/Users/jalejandro1/Downloads/Computer_Systems_Design-master_TEST/CSDFINAL_COCKMUNCHERS/audio_recorder.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -sd ../../ddr2_mem_test_ise_14.7_v1/ddr2_mem_test_v1/ddr2_mem_test/ipcore_dir -nt timestamp -uc audiomessagerecorder.ucf -p xc6slx45-csg484-3 audio_recorder.ngc audio_recorder.ngd  
+map -intstyle ise -p xc6slx45-csg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o audio_recorder_map.ncd audio_recorder.ngd audio_recorder.pcf 
+par -w -intstyle ise -ol high -mt off audio_recorder_map.ncd audio_recorder.ncd audio_recorder.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml audio_recorder.twx audio_recorder.ncd -o audio_recorder.twr audio_recorder.pcf -ucf audiomessagerecorder.ucf 
+bitgen -intstyle ise -f audio_recorder.ut audio_recorder.ncd 
+xst -intstyle ise -ifn "C:/Users/james/OneDrive/SRING 2023 USF/CDA 4203 Computer System Design/CSDFINAL_COCKMUNCHERS/audio_recorder.xst" -ofn "C:/Users/james/OneDrive/SRING 2023 USF/CDA 4203 Computer System Design/CSDFINAL_COCKMUNCHERS/audio_recorder.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -sd resources/ddr2_mem_test_ise_14.7_v1/ddr2_mem_test_v1/ddr2_mem_test/ipcore_dir -nt timestamp -uc audiomessagerecorder.ucf -p xc6slx45-csg484-3 "audio_recorder.ngc" audio_recorder.ngd  
+map -intstyle ise -p xc6slx45-csg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o audio_recorder_map.ncd audio_recorder.ngd audio_recorder.pcf 
+par -w -intstyle ise -ol high -mt off audio_recorder_map.ncd audio_recorder.ncd audio_recorder.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml audio_recorder.twx audio_recorder.ncd -o audio_recorder.twr audio_recorder.pcf -ucf audiomessagerecorder.ucf 
+bitgen -intstyle ise -f audio_recorder.ut audio_recorder.ncd 
+xst -intstyle ise -ifn "C:/Users/james/OneDrive/SRING 2023 USF/CDA 4203 Computer System Design/CSDFINAL_COCKMUNCHERS/audio_recorder.xst" -ofn "C:/Users/james/OneDrive/SRING 2023 USF/CDA 4203 Computer System Design/CSDFINAL_COCKMUNCHERS/audio_recorder.syr" 
+xst -intstyle ise -ifn "C:/Users/james/OneDrive/SRING 2023 USF/CDA 4203 Computer System Design/CSDFINAL_COCKMUNCHERS/audio_recorder.xst" -ofn "C:/Users/james/OneDrive/SRING 2023 USF/CDA 4203 Computer System Design/CSDFINAL_COCKMUNCHERS/audio_recorder.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -sd resources/ddr2_mem_test_ise_14.7_v1/ddr2_mem_test_v1/ddr2_mem_test/ipcore_dir -nt timestamp -uc audiomessagerecorder.ucf -p xc6slx45-csg484-3 "audio_recorder.ngc" audio_recorder.ngd  
+map -intstyle ise -p xc6slx45-csg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o audio_recorder_map.ncd audio_recorder.ngd audio_recorder.pcf 
+par -w -intstyle ise -ol high -mt off audio_recorder_map.ncd audio_recorder.ncd audio_recorder.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml audio_recorder.twx audio_recorder.ncd -o audio_recorder.twr audio_recorder.pcf -ucf audiomessagerecorder.ucf 
+bitgen -intstyle ise -f audio_recorder.ut audio_recorder.ncd 
+xst -intstyle ise -ifn "C:/Users/james/OneDrive/SRING 2023 USF/CDA 4203 Computer System Design/CSDFINAL_COCKMUNCHERS/audio_recorder.xst" -ofn "C:/Users/james/OneDrive/SRING 2023 USF/CDA 4203 Computer System Design/CSDFINAL_COCKMUNCHERS/audio_recorder.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -sd resources/ddr2_mem_test_ise_14.7_v1/ddr2_mem_test_v1/ddr2_mem_test/ipcore_dir -nt timestamp -uc audiomessagerecorder.ucf -p xc6slx45-csg484-3 "audio_recorder.ngc" audio_recorder.ngd  
+map -intstyle ise -p xc6slx45-csg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o audio_recorder_map.ncd audio_recorder.ngd audio_recorder.pcf 
+par -w -intstyle ise -ol high -mt off audio_recorder_map.ncd audio_recorder.ncd audio_recorder.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml audio_recorder.twx audio_recorder.ncd -o audio_recorder.twr audio_recorder.pcf -ucf audiomessagerecorder.ucf 
+bitgen -intstyle ise -f audio_recorder.ut audio_recorder.ncd 
+xst -intstyle ise -ifn "C:/Users/james/OneDrive/SRING 2023 USF/CDA 4203 Computer System Design/CSDFINAL_COCKMUNCHERS/audio_recorder.xst" -ofn "C:/Users/james/OneDrive/SRING 2023 USF/CDA 4203 Computer System Design/CSDFINAL_COCKMUNCHERS/audio_recorder.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -sd resources/ddr2_mem_test_ise_14.7_v1/ddr2_mem_test_v1/ddr2_mem_test/ipcore_dir -nt timestamp -uc audiomessagerecorder.ucf -p xc6slx45-csg484-3 "audio_recorder.ngc" audio_recorder.ngd  
+map -intstyle ise -p xc6slx45-csg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o audio_recorder_map.ncd audio_recorder.ngd audio_recorder.pcf 
+par -w -intstyle ise -ol high -mt off audio_recorder_map.ncd audio_recorder.ncd audio_recorder.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml audio_recorder.twx audio_recorder.ncd -o audio_recorder.twr audio_recorder.pcf -ucf audiomessagerecorder.ucf 
+bitgen -intstyle ise -f audio_recorder.ut audio_recorder.ncd 
+xst -intstyle ise -ifn "C:/Users/james/OneDrive/SRING 2023 USF/CDA 4203 Computer System Design/CSDFINAL_COCKMUNCHERS/audio_recorder.xst" -ofn "C:/Users/james/OneDrive/SRING 2023 USF/CDA 4203 Computer System Design/CSDFINAL_COCKMUNCHERS/audio_recorder.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -sd resources/ddr2_mem_test_ise_14.7_v1/ddr2_mem_test_v1/ddr2_mem_test/ipcore_dir -nt timestamp -uc audiomessagerecorder.ucf -p xc6slx45-csg484-3 "audio_recorder.ngc" audio_recorder.ngd  
+map -intstyle ise -p xc6slx45-csg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o audio_recorder_map.ncd audio_recorder.ngd audio_recorder.pcf 
+par -w -intstyle ise -ol high -mt off audio_recorder_map.ncd audio_recorder.ncd audio_recorder.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml audio_recorder.twx audio_recorder.ncd -o audio_recorder.twr audio_recorder.pcf -ucf audiomessagerecorder.ucf 
+bitgen -intstyle ise -f audio_recorder.ut audio_recorder.ncd 
+xst -intstyle ise -ifn "C:/Users/james/OneDrive/SRING 2023 USF/CDA 4203 Computer System Design/CSDFINAL_COCKMUNCHERS/audio_recorder.xst" -ofn "C:/Users/james/OneDrive/SRING 2023 USF/CDA 4203 Computer System Design/CSDFINAL_COCKMUNCHERS/audio_recorder.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -sd resources/ddr2_mem_test_ise_14.7_v1/ddr2_mem_test_v1/ddr2_mem_test/ipcore_dir -nt timestamp -uc audiomessagerecorder.ucf -p xc6slx45-csg484-3 "audio_recorder.ngc" audio_recorder.ngd  
+map -intstyle ise -p xc6slx45-csg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o audio_recorder_map.ncd audio_recorder.ngd audio_recorder.pcf 
+par -w -intstyle ise -ol high -mt off audio_recorder_map.ncd audio_recorder.ncd audio_recorder.pcf 
+bitgen -intstyle ise -f audio_recorder.ut audio_recorder.ncd 
+xst -intstyle ise -ifn "C:/Users/james/OneDrive/SRING 2023 USF/CDA 4203 Computer System Design/CSDFINAL_COCKMUNCHERS/audio_recorder.xst" -ofn "C:/Users/james/OneDrive/SRING 2023 USF/CDA 4203 Computer System Design/CSDFINAL_COCKMUNCHERS/audio_recorder.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -sd resources/ddr2_mem_test_ise_14.7_v1/ddr2_mem_test_v1/ddr2_mem_test/ipcore_dir -nt timestamp -uc audiomessagerecorder.ucf -p xc6slx45-csg484-3 "audio_recorder.ngc" audio_recorder.ngd  
+map -intstyle ise -p xc6slx45-csg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o audio_recorder_map.ncd audio_recorder.ngd audio_recorder.pcf 
+par -w -intstyle ise -ol high -mt off audio_recorder_map.ncd audio_recorder.ncd audio_recorder.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml audio_recorder.twx audio_recorder.ncd -o audio_recorder.twr audio_recorder.pcf -ucf audiomessagerecorder.ucf 
+bitgen -intstyle ise -f audio_recorder.ut audio_recorder.ncd 
+xst -intstyle ise -ifn "C:/Users/james/OneDrive/SRING 2023 USF/CDA 4203 Computer System Design/CSDFINAL_COCKMUNCHERS/audio_recorder.xst" -ofn "C:/Users/james/OneDrive/SRING 2023 USF/CDA 4203 Computer System Design/CSDFINAL_COCKMUNCHERS/audio_recorder.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -sd resources/ddr2_mem_test_ise_14.7_v1/ddr2_mem_test_v1/ddr2_mem_test/ipcore_dir -nt timestamp -uc audiomessagerecorder.ucf -p xc6slx45-csg484-3 "audio_recorder.ngc" audio_recorder.ngd  
+map -intstyle ise -p xc6slx45-csg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o audio_recorder_map.ncd audio_recorder.ngd audio_recorder.pcf 
+par -w -intstyle ise -ol high -mt off audio_recorder_map.ncd audio_recorder.ncd audio_recorder.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml audio_recorder.twx audio_recorder.ncd -o audio_recorder.twr audio_recorder.pcf -ucf audiomessagerecorder.ucf 
+bitgen -intstyle ise -f audio_recorder.ut audio_recorder.ncd 
+xst -intstyle ise -ifn "C:/Users/james/OneDrive/SRING 2023 USF/CDA 4203 Computer System Design/CSDFINAL_COCKMUNCHERS/audio_recorder.xst" -ofn "C:/Users/james/OneDrive/SRING 2023 USF/CDA 4203 Computer System Design/CSDFINAL_COCKMUNCHERS/audio_recorder.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -sd resources/ddr2_mem_test_ise_14.7_v1/ddr2_mem_test_v1/ddr2_mem_test/ipcore_dir -nt timestamp -uc audiomessagerecorder.ucf -p xc6slx45-csg484-3 "audio_recorder.ngc" audio_recorder.ngd  
+map -intstyle ise -p xc6slx45-csg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o audio_recorder_map.ncd audio_recorder.ngd audio_recorder.pcf 
+par -w -intstyle ise -ol high -mt off audio_recorder_map.ncd audio_recorder.ncd audio_recorder.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml audio_recorder.twx audio_recorder.ncd -o audio_recorder.twr audio_recorder.pcf -ucf audiomessagerecorder.ucf 
+bitgen -intstyle ise -f audio_recorder.ut audio_recorder.ncd 
+xst -intstyle ise -ifn "C:/Users/jalejandro1/Downloads/CSDFINAL_COCKMUNCHERS/CSDFINAL_COCKMUNCHERS/audio_recorder.xst" -ofn "C:/Users/jalejandro1/Downloads/CSDFINAL_COCKMUNCHERS/CSDFINAL_COCKMUNCHERS/audio_recorder.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -sd resources/ddr2_mem_test_ise_14.7_v1/ddr2_mem_test_v1/ddr2_mem_test/ipcore_dir -nt timestamp -uc audiomessagerecorder.ucf -p xc6slx45-csg484-3 audio_recorder.ngc audio_recorder.ngd  
+map -intstyle ise -p xc6slx45-csg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o audio_recorder_map.ncd audio_recorder.ngd audio_recorder.pcf 
+par -w -intstyle ise -ol high -mt off audio_recorder_map.ncd audio_recorder.ncd audio_recorder.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml audio_recorder.twx audio_recorder.ncd -o audio_recorder.twr audio_recorder.pcf -ucf audiomessagerecorder.ucf 
+bitgen -intstyle ise -f audio_recorder.ut audio_recorder.ncd 
+xst -intstyle ise -ifn "C:/Users/jalejandro1/Downloads/CSDFINAL_COCKMUNCHERS/CSDFINAL_COCKMUNCHERS/audio_recorder.xst" -ofn "C:/Users/jalejandro1/Downloads/CSDFINAL_COCKMUNCHERS/CSDFINAL_COCKMUNCHERS/audio_recorder.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -sd resources/ddr2_mem_test_ise_14.7_v1/ddr2_mem_test_v1/ddr2_mem_test/ipcore_dir -nt timestamp -uc audiomessagerecorder.ucf -p xc6slx45-csg484-3 audio_recorder.ngc audio_recorder.ngd  
+map -intstyle ise -p xc6slx45-csg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o audio_recorder_map.ncd audio_recorder.ngd audio_recorder.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -sd resources/ddr2_mem_test_ise_14.7_v1/ddr2_mem_test_v1/ddr2_mem_test/ipcore_dir -nt timestamp -uc audiomessagerecorder.ucf -p xc6slx45-csg484-3 audio_recorder.ngc audio_recorder.ngd  
+map -intstyle ise -p xc6slx45-csg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o audio_recorder_map.ncd audio_recorder.ngd audio_recorder.pcf 
+par -w -intstyle ise -ol high -mt off audio_recorder_map.ncd audio_recorder.ncd audio_recorder.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml audio_recorder.twx audio_recorder.ncd -o audio_recorder.twr audio_recorder.pcf -ucf audiomessagerecorder.ucf 
+bitgen -intstyle ise -f audio_recorder.ut audio_recorder.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -sd resources/ddr2_mem_test_ise_14.7_v1/ddr2_mem_test_v1/ddr2_mem_test/ipcore_dir -nt timestamp -uc audiomessagerecorder.ucf -p xc6slx45-csg484-3 audio_recorder.ngc audio_recorder.ngd  
+map -intstyle ise -p xc6slx45-csg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o audio_recorder_map.ncd audio_recorder.ngd audio_recorder.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -sd resources/ddr2_mem_test_ise_14.7_v1/ddr2_mem_test_v1/ddr2_mem_test/ipcore_dir -nt timestamp -uc audiomessagerecorder.ucf -p xc6slx45-csg484-3 audio_recorder.ngc audio_recorder.ngd  
+map -intstyle ise -p xc6slx45-csg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o audio_recorder_map.ncd audio_recorder.ngd audio_recorder.pcf 
+par -w -intstyle ise -ol high -mt off audio_recorder_map.ncd audio_recorder.ncd audio_recorder.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml audio_recorder.twx audio_recorder.ncd -o audio_recorder.twr audio_recorder.pcf -ucf audiomessagerecorder.ucf 
+bitgen -intstyle ise -f audio_recorder.ut audio_recorder.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -sd resources/ddr2_mem_test_ise_14.7_v1/ddr2_mem_test_v1/ddr2_mem_test/ipcore_dir -nt timestamp -uc audiomessagerecorder.ucf -p xc6slx45-csg484-3 audio_recorder.ngc audio_recorder.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -sd resources/ddr2_mem_test_ise_14.7_v1/ddr2_mem_test_v1/ddr2_mem_test/ipcore_dir -nt timestamp -uc audiomessagerecorder.ucf -p xc6slx45-csg484-3 audio_recorder.ngc audio_recorder.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -sd resources/ddr2_mem_test_ise_14.7_v1/ddr2_mem_test_v1/ddr2_mem_test/ipcore_dir -nt timestamp -uc audiomessagerecorder.ucf -p xc6slx45-csg484-3 audio_recorder.ngc audio_recorder.ngd  
+map -intstyle ise -p xc6slx45-csg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o audio_recorder_map.ncd audio_recorder.ngd audio_recorder.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -sd resources/ddr2_mem_test_ise_14.7_v1/ddr2_mem_test_v1/ddr2_mem_test/ipcore_dir -nt timestamp -uc audiomessagerecorder.ucf -p xc6slx45-csg484-3 audio_recorder.ngc audio_recorder.ngd  
+map -intstyle ise -p xc6slx45-csg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o audio_recorder_map.ncd audio_recorder.ngd audio_recorder.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -sd resources/ddr2_mem_test_ise_14.7_v1/ddr2_mem_test_v1/ddr2_mem_test/ipcore_dir -nt timestamp -uc audiomessagerecorder.ucf -p xc6slx45-csg484-3 audio_recorder.ngc audio_recorder.ngd  
+map -intstyle ise -p xc6slx45-csg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o audio_recorder_map.ncd audio_recorder.ngd audio_recorder.pcf 
+par -w -intstyle ise -ol high -mt off audio_recorder_map.ncd audio_recorder.ncd audio_recorder.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml audio_recorder.twx audio_recorder.ncd -o audio_recorder.twr audio_recorder.pcf -ucf audiomessagerecorder.ucf 
+bitgen -intstyle ise -f audio_recorder.ut audio_recorder.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -sd resources/ddr2_mem_test_ise_14.7_v1/ddr2_mem_test_v1/ddr2_mem_test/ipcore_dir -nt timestamp -uc audiomessagerecorder.ucf -p xc6slx45-csg484-3 audio_recorder.ngc audio_recorder.ngd  
+map -intstyle ise -p xc6slx45-csg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o audio_recorder_map.ncd audio_recorder.ngd audio_recorder.pcf 
+xst -intstyle ise -ifn "C:/Users/jalejandro1/Downloads/CSDFINAL_COCKMUNCHERS/CSDFINAL_COCKMUNCHERS/audio_recorder.xst" -ofn "C:/Users/jalejandro1/Downloads/CSDFINAL_COCKMUNCHERS/CSDFINAL_COCKMUNCHERS/audio_recorder.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -sd resources/ddr2_mem_test_ise_14.7_v1/ddr2_mem_test_v1/ddr2_mem_test/ipcore_dir -nt timestamp -uc audiomessagerecorder.ucf -p xc6slx45-csg484-3 audio_recorder.ngc audio_recorder.ngd  
+map -intstyle ise -p xc6slx45-csg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o audio_recorder_map.ncd audio_recorder.ngd audio_recorder.pcf 
+xst -intstyle ise -ifn "C:/Users/jalejandro1/Downloads/CSDFINAL_COCKMUNCHERS/CSDFINAL_COCKMUNCHERS/audio_recorder.xst" -ofn "C:/Users/jalejandro1/Downloads/CSDFINAL_COCKMUNCHERS/CSDFINAL_COCKMUNCHERS/audio_recorder.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -sd resources/ddr2_mem_test_ise_14.7_v1/ddr2_mem_test_v1/ddr2_mem_test/ipcore_dir -nt timestamp -uc audiomessagerecorder.ucf -p xc6slx45-csg484-3 audio_recorder.ngc audio_recorder.ngd  
+map -intstyle ise -p xc6slx45-csg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o audio_recorder_map.ncd audio_recorder.ngd audio_recorder.pcf 
+par -w -intstyle ise -ol high -mt off audio_recorder_map.ncd audio_recorder.ncd audio_recorder.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml audio_recorder.twx audio_recorder.ncd -o audio_recorder.twr audio_recorder.pcf -ucf audiomessagerecorder.ucf 
+bitgen -intstyle ise -f audio_recorder.ut audio_recorder.ncd 
+xst -intstyle ise -ifn "C:/Users/jalejandro1/Downloads/CSDFINAL_COCKMUNCHERS/CSDFINAL_COCKMUNCHERS/audio_recorder.xst" -ofn "C:/Users/jalejandro1/Downloads/CSDFINAL_COCKMUNCHERS/CSDFINAL_COCKMUNCHERS/audio_recorder.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -sd resources/ddr2_mem_test_ise_14.7_v1/ddr2_mem_test_v1/ddr2_mem_test/ipcore_dir -nt timestamp -uc audiomessagerecorder.ucf -p xc6slx45-csg484-3 audio_recorder.ngc audio_recorder.ngd  
+map -intstyle ise -p xc6slx45-csg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o audio_recorder_map.ncd audio_recorder.ngd audio_recorder.pcf 
+par -w -intstyle ise -ol high -mt off audio_recorder_map.ncd audio_recorder.ncd audio_recorder.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml audio_recorder.twx audio_recorder.ncd -o audio_recorder.twr audio_recorder.pcf -ucf audiomessagerecorder.ucf 
+bitgen -intstyle ise -f audio_recorder.ut audio_recorder.ncd 
+xst -intstyle ise -ifn "C:/Users/jalejandro1/Downloads/CSDFINAL_COCKMUNCHERS/CSDFINAL_COCKMUNCHERS/audio_recorder.xst" -ofn "C:/Users/jalejandro1/Downloads/CSDFINAL_COCKMUNCHERS/CSDFINAL_COCKMUNCHERS/audio_recorder.syr" 
+xst -intstyle ise -ifn "C:/Users/jalejandro1/Downloads/CSDFINAL_COCKMUNCHERS/CSDFINAL_COCKMUNCHERS/audio_recorder.xst" -ofn "C:/Users/jalejandro1/Downloads/CSDFINAL_COCKMUNCHERS/CSDFINAL_COCKMUNCHERS/audio_recorder.syr" 
+xst -intstyle ise -ifn "C:/Users/jalejandro1/Downloads/CSDFINAL_COCKMUNCHERS/CSDFINAL_COCKMUNCHERS/audio_recorder.xst" -ofn "C:/Users/jalejandro1/Downloads/CSDFINAL_COCKMUNCHERS/CSDFINAL_COCKMUNCHERS/audio_recorder.syr" 
+xst -intstyle ise -ifn "C:/Users/jalejandro1/Downloads/CSDFINAL_COCKMUNCHERS/CSDFINAL_COCKMUNCHERS/audio_recorder.xst" -ofn "C:/Users/jalejandro1/Downloads/CSDFINAL_COCKMUNCHERS/CSDFINAL_COCKMUNCHERS/audio_recorder.syr" 
+xst -intstyle ise -ifn "C:/Users/jalejandro1/Downloads/CSDFINAL_COCKMUNCHERS/CSDFINAL_COCKMUNCHERS/audio_recorder.xst" -ofn "C:/Users/jalejandro1/Downloads/CSDFINAL_COCKMUNCHERS/CSDFINAL_COCKMUNCHERS/audio_recorder.syr" 
+xst -intstyle ise -ifn "C:/Users/jalejandro1/Downloads/CSDFINAL_COCKMUNCHERS/CSDFINAL_COCKMUNCHERS/audio_recorder.xst" -ofn "C:/Users/jalejandro1/Downloads/CSDFINAL_COCKMUNCHERS/CSDFINAL_COCKMUNCHERS/audio_recorder.syr" 
+xst -intstyle ise -ifn "C:/Users/jalejandro1/Downloads/CSDFINAL_COCKMUNCHERS/CSDFINAL_COCKMUNCHERS/audio_recorder.xst" -ofn "C:/Users/jalejandro1/Downloads/CSDFINAL_COCKMUNCHERS/CSDFINAL_COCKMUNCHERS/audio_recorder.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -sd resources/ddr2_mem_test_ise_14.7_v1/ddr2_mem_test_v1/ddr2_mem_test/ipcore_dir -nt timestamp -uc audiomessagerecorder.ucf -p xc6slx45-csg484-3 audio_recorder.ngc audio_recorder.ngd  
+map -intstyle ise -p xc6slx45-csg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o audio_recorder_map.ncd audio_recorder.ngd audio_recorder.pcf 
+par -w -intstyle ise -ol high -mt off audio_recorder_map.ncd audio_recorder.ncd audio_recorder.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml audio_recorder.twx audio_recorder.ncd -o audio_recorder.twr audio_recorder.pcf -ucf audiomessagerecorder.ucf 
+bitgen -intstyle ise -f audio_recorder.ut audio_recorder.ncd 
+xst -intstyle ise -ifn "C:/Users/jalejandro1/Downloads/CSDFINAL_COCKMUNCHERS/CSDFINAL_COCKMUNCHERS/audio_recorder.xst" -ofn "C:/Users/jalejandro1/Downloads/CSDFINAL_COCKMUNCHERS/CSDFINAL_COCKMUNCHERS/audio_recorder.syr" 
+xst -intstyle ise -ifn "C:/Users/jalejandro1/Downloads/CSDFINAL_COCKMUNCHERS/CSDFINAL_COCKMUNCHERS/audio_recorder.xst" -ofn "C:/Users/jalejandro1/Downloads/CSDFINAL_COCKMUNCHERS/CSDFINAL_COCKMUNCHERS/audio_recorder.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -sd resources/ddr2_mem_test_ise_14.7_v1/ddr2_mem_test_v1/ddr2_mem_test/ipcore_dir -nt timestamp -uc audiomessagerecorder.ucf -p xc6slx45-csg484-3 audio_recorder.ngc audio_recorder.ngd  
+map -intstyle ise -p xc6slx45-csg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o audio_recorder_map.ncd audio_recorder.ngd audio_recorder.pcf 
+par -w -intstyle ise -ol high -mt off audio_recorder_map.ncd audio_recorder.ncd audio_recorder.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml audio_recorder.twx audio_recorder.ncd -o audio_recorder.twr audio_recorder.pcf -ucf audiomessagerecorder.ucf 
+bitgen -intstyle ise -f audio_recorder.ut audio_recorder.ncd 
+xst -intstyle ise -ifn "C:/Users/jalejandro1/Downloads/CSDFINAL_COCKMUNCHERS/CSDFINAL_COCKMUNCHERS/audio_recorder.xst" -ofn "C:/Users/jalejandro1/Downloads/CSDFINAL_COCKMUNCHERS/CSDFINAL_COCKMUNCHERS/audio_recorder.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -sd resources/ddr2_mem_test_ise_14.7_v1/ddr2_mem_test_v1/ddr2_mem_test/ipcore_dir -nt timestamp -uc audiomessagerecorder.ucf -p xc6slx45-csg484-3 audio_recorder.ngc audio_recorder.ngd  
+map -intstyle ise -p xc6slx45-csg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o audio_recorder_map.ncd audio_recorder.ngd audio_recorder.pcf 
+par -w -intstyle ise -ol high -mt off audio_recorder_map.ncd audio_recorder.ncd audio_recorder.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml audio_recorder.twx audio_recorder.ncd -o audio_recorder.twr audio_recorder.pcf -ucf audiomessagerecorder.ucf 
+bitgen -intstyle ise -f audio_recorder.ut audio_recorder.ncd 
+xst -intstyle ise -ifn "C:/Users/jalejandro1/Downloads/CSDFINAL_COCKMUNCHERS/CSDFINAL_COCKMUNCHERS/audio_recorder.xst" -ofn "C:/Users/jalejandro1/Downloads/CSDFINAL_COCKMUNCHERS/CSDFINAL_COCKMUNCHERS/audio_recorder.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -sd resources/ddr2_mem_test_ise_14.7_v1/ddr2_mem_test_v1/ddr2_mem_test/ipcore_dir -nt timestamp -uc audiomessagerecorder.ucf -p xc6slx45-csg484-3 audio_recorder.ngc audio_recorder.ngd  
+map -intstyle ise -p xc6slx45-csg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o audio_recorder_map.ncd audio_recorder.ngd audio_recorder.pcf 
+par -w -intstyle ise -ol high -mt off audio_recorder_map.ncd audio_recorder.ncd audio_recorder.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml audio_recorder.twx audio_recorder.ncd -o audio_recorder.twr audio_recorder.pcf -ucf audiomessagerecorder.ucf 
+bitgen -intstyle ise -f audio_recorder.ut audio_recorder.ncd 
+xst -intstyle ise -ifn "C:/Users/jalejandro1/Downloads/CSDFINAL_COCKMUNCHERS/CSDFINAL_COCKMUNCHERS/audio_recorder.xst" -ofn "C:/Users/jalejandro1/Downloads/CSDFINAL_COCKMUNCHERS/CSDFINAL_COCKMUNCHERS/audio_recorder.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -sd resources/ddr2_mem_test_ise_14.7_v1/ddr2_mem_test_v1/ddr2_mem_test/ipcore_dir -nt timestamp -uc audiomessagerecorder.ucf -p xc6slx45-csg484-3 audio_recorder.ngc audio_recorder.ngd  
+map -intstyle ise -p xc6slx45-csg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o audio_recorder_map.ncd audio_recorder.ngd audio_recorder.pcf 
+par -w -intstyle ise -ol high -mt off audio_recorder_map.ncd audio_recorder.ncd audio_recorder.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml audio_recorder.twx audio_recorder.ncd -o audio_recorder.twr audio_recorder.pcf -ucf audiomessagerecorder.ucf 
+bitgen -intstyle ise -f audio_recorder.ut audio_recorder.ncd 
+xst -intstyle ise -ifn "C:/Users/jalejandro1/Downloads/CSDFINAL_COCKMUNCHERS/CSDFINAL_COCKMUNCHERS/audio_recorder.xst" -ofn "C:/Users/jalejandro1/Downloads/CSDFINAL_COCKMUNCHERS/CSDFINAL_COCKMUNCHERS/audio_recorder.syr" 
+xst -intstyle ise -ifn "C:/Users/jalejandro1/Downloads/CSDFINAL_COCKMUNCHERS/CSDFINAL_COCKMUNCHERS/audio_recorder.xst" -ofn "C:/Users/jalejandro1/Downloads/CSDFINAL_COCKMUNCHERS/CSDFINAL_COCKMUNCHERS/audio_recorder.syr" 
+xst -intstyle ise -ifn "C:/Users/jalejandro1/Downloads/CSDFINAL_COCKMUNCHERS/CSDFINAL_COCKMUNCHERS/audio_recorder.xst" -ofn "C:/Users/jalejandro1/Downloads/CSDFINAL_COCKMUNCHERS/CSDFINAL_COCKMUNCHERS/audio_recorder.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -sd resources/ddr2_mem_test_ise_14.7_v1/ddr2_mem_test_v1/ddr2_mem_test/ipcore_dir -nt timestamp -uc audiomessagerecorder.ucf -p xc6slx45-csg484-3 audio_recorder.ngc audio_recorder.ngd  
+map -intstyle ise -p xc6slx45-csg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o audio_recorder_map.ncd audio_recorder.ngd audio_recorder.pcf 
+par -w -intstyle ise -ol high -mt off audio_recorder_map.ncd audio_recorder.ncd audio_recorder.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml audio_recorder.twx audio_recorder.ncd -o audio_recorder.twr audio_recorder.pcf -ucf audiomessagerecorder.ucf 
+bitgen -intstyle ise -f audio_recorder.ut audio_recorder.ncd 
+xst -intstyle ise -ifn "C:/Users/jalejandro1/Downloads/CSDFINAL_COCKMUNCHERS/CSDFINAL_COCKMUNCHERS/audio_recorder.xst" -ofn "C:/Users/jalejandro1/Downloads/CSDFINAL_COCKMUNCHERS/CSDFINAL_COCKMUNCHERS/audio_recorder.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -sd resources/ddr2_mem_test_ise_14.7_v1/ddr2_mem_test_v1/ddr2_mem_test/ipcore_dir -nt timestamp -uc audiomessagerecorder.ucf -p xc6slx45-csg484-3 audio_recorder.ngc audio_recorder.ngd  
+map -intstyle ise -p xc6slx45-csg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o audio_recorder_map.ncd audio_recorder.ngd audio_recorder.pcf 
+par -w -intstyle ise -ol high -mt off audio_recorder_map.ncd audio_recorder.ncd audio_recorder.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml audio_recorder.twx audio_recorder.ncd -o audio_recorder.twr audio_recorder.pcf -ucf audiomessagerecorder.ucf 
+bitgen -intstyle ise -f audio_recorder.ut audio_recorder.ncd 
+xst -intstyle ise -ifn "C:/Users/jalejandro1/Downloads/CSDFINAL_COCKMUNCHERS/CSDFINAL_COCKMUNCHERS/audio_recorder.xst" -ofn "C:/Users/jalejandro1/Downloads/CSDFINAL_COCKMUNCHERS/CSDFINAL_COCKMUNCHERS/audio_recorder.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -sd resources/ddr2_mem_test_ise_14.7_v1/ddr2_mem_test_v1/ddr2_mem_test/ipcore_dir -nt timestamp -uc audiomessagerecorder.ucf -p xc6slx45-csg484-3 audio_recorder.ngc audio_recorder.ngd  
+map -intstyle ise -p xc6slx45-csg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o audio_recorder_map.ncd audio_recorder.ngd audio_recorder.pcf 
+par -w -intstyle ise -ol high -mt off audio_recorder_map.ncd audio_recorder.ncd audio_recorder.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml audio_recorder.twx audio_recorder.ncd -o audio_recorder.twr audio_recorder.pcf -ucf audiomessagerecorder.ucf 
+bitgen -intstyle ise -f audio_recorder.ut audio_recorder.ncd 
+xst -intstyle ise -ifn "C:/Users/jalejandro1/Downloads/CSDFINAL_COCKMUNCHERS/CSDFINAL_COCKMUNCHERS/audio_recorder.xst" -ofn "C:/Users/jalejandro1/Downloads/CSDFINAL_COCKMUNCHERS/CSDFINAL_COCKMUNCHERS/audio_recorder.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -sd resources/ddr2_mem_test_ise_14.7_v1/ddr2_mem_test_v1/ddr2_mem_test/ipcore_dir -nt timestamp -uc audiomessagerecorder.ucf -p xc6slx45-csg484-3 audio_recorder.ngc audio_recorder.ngd  
+xst -intstyle ise -ifn "C:/Users/jalejandro1/Downloads/CSDFINAL_COCKMUNCHERS/CSDFINAL_COCKMUNCHERS/audio_recorder.xst" -ofn "C:/Users/jalejandro1/Downloads/CSDFINAL_COCKMUNCHERS/CSDFINAL_COCKMUNCHERS/audio_recorder.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -sd resources/ddr2_mem_test_ise_14.7_v1/ddr2_mem_test_v1/ddr2_mem_test/ipcore_dir -nt timestamp -uc audiomessagerecorder.ucf -p xc6slx45-csg484-3 audio_recorder.ngc audio_recorder.ngd  
+map -intstyle ise -p xc6slx45-csg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o audio_recorder_map.ncd audio_recorder.ngd audio_recorder.pcf 
+par -w -intstyle ise -ol high -mt off audio_recorder_map.ncd audio_recorder.ncd audio_recorder.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml audio_recorder.twx audio_recorder.ncd -o audio_recorder.twr audio_recorder.pcf -ucf audiomessagerecorder.ucf 
+bitgen -intstyle ise -f audio_recorder.ut audio_recorder.ncd 
+xst -intstyle ise -ifn "C:/Users/jalejandro1/Downloads/CSDFINAL_COCKMUNCHERS/CSDFINAL_COCKMUNCHERS/audio_recorder.xst" -ofn "C:/Users/jalejandro1/Downloads/CSDFINAL_COCKMUNCHERS/CSDFINAL_COCKMUNCHERS/audio_recorder.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -sd resources/ddr2_mem_test_ise_14.7_v1/ddr2_mem_test_v1/ddr2_mem_test/ipcore_dir -nt timestamp -uc audiomessagerecorder.ucf -p xc6slx45-csg484-3 audio_recorder.ngc audio_recorder.ngd  
+map -intstyle ise -p xc6slx45-csg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o audio_recorder_map.ncd audio_recorder.ngd audio_recorder.pcf 
+xst -intstyle ise -ifn "C:/Users/jalejandro1/Downloads/CSDFINAL_COCKMUNCHERS/CSDFINAL_COCKMUNCHERS/audio_recorder.xst" -ofn "C:/Users/jalejandro1/Downloads/CSDFINAL_COCKMUNCHERS/CSDFINAL_COCKMUNCHERS/audio_recorder.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -sd resources/ddr2_mem_test_ise_14.7_v1/ddr2_mem_test_v1/ddr2_mem_test/ipcore_dir -nt timestamp -uc audiomessagerecorder.ucf -p xc6slx45-csg484-3 audio_recorder.ngc audio_recorder.ngd  
+map -intstyle ise -p xc6slx45-csg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o audio_recorder_map.ncd audio_recorder.ngd audio_recorder.pcf 
+par -w -intstyle ise -ol high -mt off audio_recorder_map.ncd audio_recorder.ncd audio_recorder.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml audio_recorder.twx audio_recorder.ncd -o audio_recorder.twr audio_recorder.pcf -ucf audiomessagerecorder.ucf 
+bitgen -intstyle ise -f audio_recorder.ut audio_recorder.ncd 
+xst -intstyle ise -ifn "C:/Users/jalejandro1/Downloads/CSDFINAL_COCKMUNCHERS/CSDFINAL_COCKMUNCHERS/audio_recorder.xst" -ofn "C:/Users/jalejandro1/Downloads/CSDFINAL_COCKMUNCHERS/CSDFINAL_COCKMUNCHERS/audio_recorder.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -sd resources/ddr2_mem_test_ise_14.7_v1/ddr2_mem_test_v1/ddr2_mem_test/ipcore_dir -nt timestamp -uc audiomessagerecorder.ucf -p xc6slx45-csg484-3 audio_recorder.ngc audio_recorder.ngd  
+map -intstyle ise -p xc6slx45-csg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o audio_recorder_map.ncd audio_recorder.ngd audio_recorder.pcf 
+par -w -intstyle ise -ol high -mt off audio_recorder_map.ncd audio_recorder.ncd audio_recorder.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml audio_recorder.twx audio_recorder.ncd -o audio_recorder.twr audio_recorder.pcf -ucf audiomessagerecorder.ucf 
+bitgen -intstyle ise -f audio_recorder.ut audio_recorder.ncd 
+xst -intstyle ise -ifn "C:/Users/montesv/Downloads/final_csd/final_csd/audio_recorder.xst" -ofn "C:/Users/montesv/Downloads/final_csd/final_csd/audio_recorder.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -sd resources/ddr2_mem_test_ise_14.7_v1/ddr2_mem_test_v1/ddr2_mem_test/ipcore_dir -nt timestamp -i -p xc6slx45-csg484-3 audio_recorder.ngc audio_recorder.ngd  
+map -intstyle ise -p xc6slx45-csg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o audio_recorder_map.ncd audio_recorder.ngd audio_recorder.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -sd resources/ddr2_mem_test_ise_14.7_v1/ddr2_mem_test_v1/ddr2_mem_test/ipcore_dir -nt timestamp -uc audio_device.ucf -p xc6slx45-csg484-3 audio_recorder.ngc audio_recorder.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -sd resources/ddr2_mem_test_ise_14.7_v1/ddr2_mem_test_v1/ddr2_mem_test/ipcore_dir -nt timestamp -uc audio_device.ucf -p xc6slx45-csg484-3 audio_recorder.ngc audio_recorder.ngd  
+map -intstyle ise -p xc6slx45-csg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o audio_recorder_map.ncd audio_recorder.ngd audio_recorder.pcf 
+par -w -intstyle ise -ol high -mt off audio_recorder_map.ncd audio_recorder.ncd audio_recorder.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml audio_recorder.twx audio_recorder.ncd -o audio_recorder.twr audio_recorder.pcf -ucf audio_device.ucf 
+bitgen -intstyle ise -f audio_recorder.ut audio_recorder.ncd 
+xst -intstyle ise -ifn "C:/Users/montesv/Downloads/final_csd/final_csd/audio_recorder.xst" -ofn "C:/Users/montesv/Downloads/final_csd/final_csd/audio_recorder.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -sd resources/ddr2_mem_test_ise_14.7_v1/ddr2_mem_test_v1/ddr2_mem_test/ipcore_dir -nt timestamp -uc audio_device.ucf -p xc6slx45-csg484-3 audio_recorder.ngc audio_recorder.ngd  
+map -intstyle ise -p xc6slx45-csg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o audio_recorder_map.ncd audio_recorder.ngd audio_recorder.pcf 
+par -w -intstyle ise -ol high -mt off audio_recorder_map.ncd audio_recorder.ncd audio_recorder.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml audio_recorder.twx audio_recorder.ncd -o audio_recorder.twr audio_recorder.pcf -ucf audio_device.ucf 
+bitgen -intstyle ise -f audio_recorder.ut audio_recorder.ncd 
+xst -intstyle ise -ifn "C:/Users/montesv/Downloads/final_csd/final_csd/audio_recorder.xst" -ofn "C:/Users/montesv/Downloads/final_csd/final_csd/audio_recorder.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -sd resources/ddr2_mem_test_ise_14.7_v1/ddr2_mem_test_v1/ddr2_mem_test/ipcore_dir -nt timestamp -uc audio_device.ucf -p xc6slx45-csg484-3 audio_recorder.ngc audio_recorder.ngd  
+map -intstyle ise -p xc6slx45-csg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o audio_recorder_map.ncd audio_recorder.ngd audio_recorder.pcf 
+par -w -intstyle ise -ol high -mt off audio_recorder_map.ncd audio_recorder.ncd audio_recorder.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml audio_recorder.twx audio_recorder.ncd -o audio_recorder.twr audio_recorder.pcf -ucf audio_device.ucf 
+bitgen -intstyle ise -f audio_recorder.ut audio_recorder.ncd 

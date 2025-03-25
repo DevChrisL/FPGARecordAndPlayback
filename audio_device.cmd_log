@@ -1,0 +1,36 @@
+xst -intstyle ise -ifn "C:/Users/montesv/Downloads/final_csd/final_csd/audio_device.xst" -ofn "C:/Users/montesv/Downloads/final_csd/final_csd/audio_device.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -sd resources/ddr2_mem_test_ise_14.7_v1/ddr2_mem_test_v1/ddr2_mem_test/ipcore_dir -nt timestamp -uc audio_device.ucf -p xc6slx45-csg484-3 audio_device.ngc audio_device.ngd  
+map -intstyle ise -p xc6slx45-csg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o audio_device_map.ncd audio_device.ngd audio_device.pcf 
+par -w -intstyle ise -ol high -mt off audio_device_map.ncd audio_device.ncd audio_device.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml audio_device.twx audio_device.ncd -o audio_device.twr audio_device.pcf -ucf audio_device.ucf 
+bitgen -intstyle ise -f audio_device.ut audio_device.ncd 
+xst -intstyle ise -ifn "C:/Users/montesv/Downloads/final_csd/final_csd/audio_device.xst" -ofn "C:/Users/montesv/Downloads/final_csd/final_csd/audio_device.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -sd resources/ddr2_mem_test_ise_14.7_v1/ddr2_mem_test_v1/ddr2_mem_test/ipcore_dir -nt timestamp -uc audio_device.ucf -p xc6slx45-csg484-3 audio_device.ngc audio_device.ngd  
+map -intstyle ise -p xc6slx45-csg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o audio_device_map.ncd audio_device.ngd audio_device.pcf 
+par -w -intstyle ise -ol high -mt off audio_device_map.ncd audio_device.ncd audio_device.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml audio_device.twx audio_device.ncd -o audio_device.twr audio_device.pcf -ucf audio_device.ucf 
+bitgen -intstyle ise -f audio_device.ut audio_device.ncd 
+xst -intstyle ise -ifn "C:/Users/montesv/Downloads/final_csd/final_csd/audio_device.xst" -ofn "C:/Users/montesv/Downloads/final_csd/final_csd/audio_device.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -sd resources/ddr2_mem_test_ise_14.7_v1/ddr2_mem_test_v1/ddr2_mem_test/ipcore_dir -nt timestamp -uc audio_device.ucf -p xc6slx45-csg484-3 audio_device.ngc audio_device.ngd  
+map -intstyle ise -p xc6slx45-csg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o audio_device_map.ncd audio_device.ngd audio_device.pcf 
+par -w -intstyle ise -ol high -mt off audio_device_map.ncd audio_device.ncd audio_device.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml audio_device.twx audio_device.ncd -o audio_device.twr audio_device.pcf -ucf audio_device.ucf 
+bitgen -intstyle ise -f audio_device.ut audio_device.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -sd resources/ddr2_mem_test_ise_14.7_v1/ddr2_mem_test_v1/ddr2_mem_test/ipcore_dir -nt timestamp -uc audio_device.ucf -p xc6slx45-csg484-3 audio_device.ngc audio_device.ngd  
+map -intstyle ise -p xc6slx45-csg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o audio_device_map.ncd audio_device.ngd audio_device.pcf 
+par -w -intstyle ise -ol high -mt off audio_device_map.ncd audio_device.ncd audio_device.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml audio_device.twx audio_device.ncd -o audio_device.twr audio_device.pcf -ucf audio_device.ucf 
+bitgen -intstyle ise -f audio_device.ut audio_device.ncd 
+xst -intstyle ise -ifn "C:/Users/montesv/Downloads/final_csd/final_csd/audio_device.xst" -ofn "C:/Users/montesv/Downloads/final_csd/final_csd/audio_device.syr" 
+xst -intstyle ise -ifn "C:/Users/montesv/Downloads/final_csd/final_csd/audio_device.xst" -ofn "C:/Users/montesv/Downloads/final_csd/final_csd/audio_device.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -sd resources/ddr2_mem_test_ise_14.7_v1/ddr2_mem_test_v1/ddr2_mem_test/ipcore_dir -nt timestamp -uc audio_device.ucf -p xc6slx45-csg484-3 audio_device.ngc audio_device.ngd  
+map -intstyle ise -p xc6slx45-csg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o audio_device_map.ncd audio_device.ngd audio_device.pcf 
+par -w -intstyle ise -ol high -mt off audio_device_map.ncd audio_device.ncd audio_device.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml audio_device.twx audio_device.ncd -o audio_device.twr audio_device.pcf -ucf audio_device.ucf 
+bitgen -intstyle ise -f audio_device.ut audio_device.ncd 
+xst -intstyle ise -ifn "C:/Users/montesv/Downloads/final_csd/final_csd/audio_device.xst" -ofn "C:/Users/montesv/Downloads/final_csd/final_csd/audio_device.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -sd resources/ddr2_mem_test_ise_14.7_v1/ddr2_mem_test_v1/ddr2_mem_test/ipcore_dir -nt timestamp -uc audio_device.ucf -p xc6slx45-csg484-3 audio_device.ngc audio_device.ngd  
+map -intstyle ise -p xc6slx45-csg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o audio_device_map.ncd audio_device.ngd audio_device.pcf 
+par -w -intstyle ise -ol high -mt off audio_device_map.ncd audio_device.ncd audio_device.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml audio_device.twx audio_device.ncd -o audio_device.twr audio_device.pcf -ucf audio_device.ucf 
+bitgen -intstyle ise -f audio_device.ut audio_device.ncd 
