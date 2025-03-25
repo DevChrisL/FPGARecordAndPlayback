@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\montesv\Downloads\final_csd\final_csd\audio_recorder.ncd
+OUTFILE=C:\Users\montesv\Downloads\final_csd\final_csd\audio_recorder.bit
+FAMILY=Spartan6
+PART=xc6slx45-3csg484
+WORKINGDIR=C:\Users\montesv\Downloads\final_csd\final_csd
+LICENSE=ISE
+USER_INFO=179783150_1777509441_210720177_505

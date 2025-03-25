@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\jalejandro1\Downloads\Computer_Systems_Design-master_TEST\Computer_Systems_Design-master\audio_message_recorder.ncd
+OUTFILE=C:\Users\jalejandro1\Downloads\Computer_Systems_Design-master_TEST\Computer_Systems_Design-master\audio_message_recorder.bit
+FAMILY=Spartan6
+PART=xc6slx45-3csg484
+WORKINGDIR=C:\Users\jalejandro1\Downloads\Computer_Systems_Design-master_TEST\Computer_Systems_Design-master
+LICENSE=ISE
+USER_INFO=179783150_1777509441_210720177_446
